@@ -1,0 +1,17 @@
+body {
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 2em; /* 24px / 16px */  /*target font size ÷ context fontsize = result */
+	font-style: italic;
+	font-weight: normal;
+}
+
+h1 a {
+	font: bold 0.458333333333333em Calibri, Optima, Arial, sans-serif; /* 11px / 24px  (h1 ist jetzt context da a darin enthalten)*/
+	color: #747474;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
