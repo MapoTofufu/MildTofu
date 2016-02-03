@@ -1,11 +1,15 @@
-body {
+html, body 
+{
 	font-size: 100%;
+	height: 100%; /* Wichtig wenn man volle höhe von bildschirm mit div füllen will */
+	margin: 0px; 
 }
 
 h1 {
 	font-size: 2em; /* 24px / 16px */  /*target font size ÷ context fontsize = result */
 	font-style: italic;
 	font-weight: normal;
+	margin: 0px; 
 }
 
 h1 a {
@@ -14,4 +18,56 @@ h1 a {
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	text-decoration: none;
+	margin: 0px; 
+}
+
+#page
+{
+	padding-left: 30px;
+	margin: 0px auto;
+	height: 100%;
+	width: 90%;
+	background-color: #e6e6e6;
+}
+
+.content
+{
+	/* 650px / 1728px = 0.37615740*/
+	width: 37.615740%;
+	margin: 0px auto;
+	background-color: #80002a;
+	overflow: auto; /* floating elemente können sonst aus der Page "fliegen" */
+	
+	
+}
+
+.content .description
+{
+	float: left;
+	width: 46.1538%; /*300px / 650px = 0,461538 */
+	background-color: #ffe5ee;
+}
+
+.description hgroup
+{
+	background-color: #ffccdd;
+	text-align: center;
+}
+
+.description article
+{
+	background-color: #ff99bb;
+}
+
+.content figure
+{
+	margin: 0; /* Viele HTML5 fähige Browser versehen figure mit default style deswegen margins zurück setzen */
+	float: right;
+	width: 46.1538%;
+	background-color: #ff3377;
+}
+
+.content figure img
+{
+	max-width: 100%;
 }

@@ -10,18 +10,20 @@
 		<title>MildTofu</title>
 		<meta name="description" content="A Portfolio Page">
 		<meta name="author" content="MapoTofufu">
-		
-		<link rel="stylesheet" href="../styles/style.css">		
+
+		<link rel="stylesheet" href="../styles/style.css">
 	</head>
 
 	<body>
 		<div id="page">
+
 			<header>
 				<h1>Agility up! <a href="/">Enter</a></h1>
 			</header>
+
 			<nav>
 				<p>
-					<a href="/">Profile</a>				
+					<a href="/">Profile</a>
 				</p>
 				<p>
 					<a href="/contact">Pixelart</a>
@@ -30,23 +32,31 @@
 					<a href="/contact">Contact</a>
 				</p>
 			</nav>
-			
+
 			<section class="content">
-				<hgroup>
-					<h1>Welcome</h1>
-					<h2>This Page contains...</h2>
-				</hgroup>
-				<!-- heading group - damit untertitel nicht einfach als <p> seine semantik verliert aber in document
+
+				<div class="description">
+					<hgroup>
+						<h1>Welcome</h1>
+						<h2>This Page contains... </h2>
+					</hgroup>
+					<!-- heading group - damit untertitel nicht einfach als <p> seine semantik verliert aber in document
 					outline nicht als einzelnter punkt angesehen wird.. (trotzdem mit firefox plugin... wtf) -->
+
+					<article>
+						Pandanoko is a slippery tribe, ice attribute, Rare A rank yo-kai. This is a rare Yo-Kai that is very popular because it's a combination of two trends—Nokos and pandas.
+					</article>
+				</div>
 				
-				<article>Blabla</article>
+				<figure id="fig1">
+					<img src="../images/Tsuchinoko_Panda.jpg"/>
+					<figcaption>
+						Very rare Yokai Tsuchinoko Panda
+					</figcaption>
+				</figure>
+
 			</section>
-			
-			<footer>
-				<p>
-					&copy; Copyright  by Mapo
-				</p>
-			</footer>
+
 		</div>
 	</body>
 </html>
